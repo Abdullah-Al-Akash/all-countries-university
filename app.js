@@ -2,7 +2,7 @@ const inputBtn = document.getElementById('input-btn');
 const inputField = document.getElementById('input-field');
 
 const loadData = () => {
-        fetch('https://universities.hipolabs.com/search?country=bangladesh')
+        fetch('http://universities.hipolabs.com/search?country=bangladesh')
                 .then(res => res.json())
                 .then(data => displayData(data))
 }
