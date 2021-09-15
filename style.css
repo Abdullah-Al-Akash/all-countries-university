@@ -1,0 +1,13 @@
+.item-card {
+        background-color: lightyellow;
+        border: 2px solid black;
+        border-radius: 10px;
+}
+
+.item-card:hover {
+        background-color: white;
+}
+
+#body {
+        background-color: rgb(102, 87, 87);
+}
