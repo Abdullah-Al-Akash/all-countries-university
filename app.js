@@ -65,7 +65,7 @@ const displayData = (universities) => {
                                                 <p class="card-text text-center text-dark"><i class="fas fa-globe"></i> ${university.country} (${university.alpha_two_code})</p>
                                                 <div class="text-center">
                                                         <a href="${website[0]}" target="_blank"
-                                                        class="text-white text-decoration-none"><button type="button"
+                                                        class="text-white text-decoration-none"><button type="button" id="visit-btn"
                                                                 class="btn btn-primary fw-bolder">Visit
                                                                 Site <i class="fas fa-arrow-right"></i></button>
                                                         </a>
