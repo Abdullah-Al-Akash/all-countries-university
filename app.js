@@ -20,18 +20,18 @@ const displayData = (universities) => {
                 const div = document.createElement('div');
                 div.innerHTML = `
                         <div class="col">
-                                <div class="h-100 border-3 border-dark item-card">
+                                <div class="h-100 item-card">
                                         <div class="card-body">
-                                                <div style="height: 80px;">
-                                                        <h4 class="card-title overflow-hidden text-center text-success">${university.name} 
+                                                <div style="height: 90px;">
+                                                        <h4 class="card-title overflow-hidden text-center text-success"><i class="fas fa-university text-danger"></i> ${university.name} 
                                                         </h4>
                                                 </div>
-                                                <p class="card-text text-center text-danger">Country: ${university.country}(${university.alpha_two_code})</p>
+                                                <p class="card-text text-center text-dark"><i class="fas fa-globe"></i> ${university.country} (${university.alpha_two_code})</p>
                                                 <div class="text-center">
                                                         <a href="${website[0]}" target="_blank"
                                                         class="text-white text-decoration-none"><button type="button"
                                                                 class="btn btn-primary fw-bolder">Visit
-                                                                Site</button>
+                                                                Site <i class="fas fa-arrow-right"></i></button>
                                                         </a>
                                                 </div>
                                         </div>
