@@ -1,10 +1,16 @@
 const inputBtn = document.getElementById('input-btn');
 const inputField = document.getElementById('input-field');
 const countryName = document.getElementById('country-name');
+const spinner = document.getElementById('spinner');
 
+// Load Spinner Function
+const loadSpinner = (display) => {
+        spinner.style.display = display;
+}
 
 // Search Countries University:
 inputBtn.addEventListener('click', function () {
+        loadSpinner('block')
         const inputValue = inputField.value;
         document.getElementById('item-container').textContent = '';
         // If User Search Nothing:
@@ -12,12 +18,14 @@ inputBtn.addEventListener('click', function () {
                 countryName.innerHTML = `
                                 <span class="text-danger"> Please Write Country Name </span>           
                         `;
+                loadSpinner('none')
                 return;
         }
         fetch(`http://universities.hipolabs.com/search?country=${inputValue}`)
                 .then(res => res.json())
                 .then(data => {
                         displayData(data)
+                        // Condition For Error Handling
                         if (data.length >= 1) {
                                 countryName.innerHTML = `
                                                 Universities of <span
@@ -29,6 +37,7 @@ inputBtn.addEventListener('click', function () {
                                         Result not found <span
                                         class="text-warning">${inputValue} </span>
                                 `;
+                                loadSpinner('none')
                         }
                 })
 
@@ -36,8 +45,6 @@ inputBtn.addEventListener('click', function () {
 })
 
 // Show All University Result After Search:
-// const displaySearchResult = (universities)
-
 const loadData = () => {
         fetch(`http://universities.hipolabs.com/search?country=bangladesh`)
                 .then(res => res.json())
@@ -48,7 +55,6 @@ loadData();
 
 // Show Load Data in UI:
 const displayData = (universities) => {
-
         const itemContainer = document.getElementById('item-container');
         universities.forEach((university) => {
                 // console.log(university);
@@ -75,6 +81,12 @@ const displayData = (universities) => {
                                 </div>
                         </div>
                 `;
+                loadSpinner('none')
+                // Appen All Item in UI
                 itemContainer.appendChild(div);
         })
 }
+
+/*
+        Thank You
+*/

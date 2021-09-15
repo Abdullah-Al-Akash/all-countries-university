@@ -9,6 +9,11 @@
         border-radius: 10px;
 }
 
+.loader {
+        height: 20rem;
+        width: 20rem;
+}
+
 #main {
         margin-top: 10%;
 }

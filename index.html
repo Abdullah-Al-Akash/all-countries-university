@@ -19,7 +19,9 @@
 </head>
 
 <body id="body">
+        <!-- Header Part -->
         <header class="fixed-top bg-dark">
+                <!-- Search Field -->
                 <div id="search" class="input-group mb-3 mx-auto pt-4">
                         <input type="text" class="form-control" placeholder="Enter Your Country" id="input-field">
                         <button class="btn btn-danger" type="button" id="input-btn">Search</button>
@@ -29,11 +31,25 @@
         </header>
         <!-- Main Part -->
         <main id="main" class="container mx-auto pb-5">
+                <!-- Loader Container -->
+                <div class="d-flex justify-content-center align-items-center">
+                        <img id="spinner" class="loader img-fluid"
+                                src="https://meatmarket.in/wp-content/uploads/2020/01/loading-bar-animated-gif-transparent-background-3.gif"
+                                alt="">
+                </div>
+                <!-- Main Item Container -->
                 <div id="item-container" class="row row-cols-1 row-cols-md-4 g-4">
 
                 </div>
         </main>
+        <!-- Footer -->
+        <footer>
+
+        </footer>
+
+        <!-- Link with Javascript -->
         <script src="app.js"></script>
 </body>
 
 </html>
+<!-- Thank You -->
