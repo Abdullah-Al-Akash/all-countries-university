@@ -3,6 +3,12 @@ const inputField = document.getElementById('input-field');
 const countryName = document.getElementById('country-name');
 const spinner = document.getElementById('spinner');
 
+// Enter Button For Search:
+inputField.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+                inputBtn.click();
+        }
+})
 // Load Spinner Function
 const loadSpinner = (display) => {
         spinner.style.display = display;
@@ -55,10 +61,12 @@ loadData();
 
 // Show Load Data in UI:
 const displayData = (universities) => {
+
         const itemContainer = document.getElementById('item-container');
         universities.forEach((university) => {
                 // console.log(university);
                 const website = university.web_pages;
+
                 const div = document.createElement('div');
                 div.innerHTML = `
                         <div class="col">
@@ -84,7 +92,9 @@ const displayData = (universities) => {
                 loadSpinner('none')
                 // Append All Item in UI
                 itemContainer.appendChild(div);
-        })
+        }
+        )
+
 }
 
 /*
