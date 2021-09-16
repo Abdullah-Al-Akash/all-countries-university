@@ -1,7 +1,7 @@
 # all-countries-university
 
 <h2>Hello!</h2>
-<p>Today I have create a website which is related about all world universities, wow! something interesting ? Yeah!
+<p>Today I have created a website which is related about all world universities, wow! something interesting ? Yeah!
         Really its very interesting topic, so lets discuss about the website and website technology.</p>
 <h6>Firs, I like to say that I have used a API for load some data like university name, university domain and also
         country name. In this website there is a beautiful search field where -</h6>
