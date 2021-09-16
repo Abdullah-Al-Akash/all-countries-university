@@ -33,6 +33,6 @@
         domain, as any hosting site want to receive https related API. But you can run this website in your Local
         Computer. I also complete this project in my local computer and take single screenshots of the website.</h4>
 <br>
-<img src="https://i.ibb.co/ScPXcMQ/universities.png" alt="">
+<img src="images/university.png" alt="">
 <br>
 <h3>---Thank You---</h3>
