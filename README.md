@@ -1,4 +1,4 @@
-# all-world-university
+# all-countries-university
 
 <h2>Hello!</h2>
 <p>Today I have create a website which is related about all world universities, wow! something interesting ? Yeah!
