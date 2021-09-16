@@ -82,7 +82,7 @@ const displayData = (universities) => {
                         </div>
                 `;
                 loadSpinner('none')
-                // Appen All Item in UI
+                // Append All Item in UI
                 itemContainer.appendChild(div);
         })
 }
